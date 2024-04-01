@@ -30,4 +30,4 @@ for num in numeros:
 else:
     print('terminado el bucle')
 
-#todo lo anterior funciona exactamente igual para tuplas
+#todo lo anterior funciona exactamente igual para tuplas y conjuntos
