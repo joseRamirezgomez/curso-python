@@ -8,6 +8,7 @@ def fibonacci(num):
         else:
             fibonacci_lista.append(b)
             a,b = b,a+b
+        
 
 resultado = fibonacci(34)
 print(resultado)
