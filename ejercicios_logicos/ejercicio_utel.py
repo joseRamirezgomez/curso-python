@@ -10,30 +10,44 @@
 #  Explicación: 1 está en el arreglo pero 2 falta.
 #ordenar de menor a mayor
 
-numeros = [7,8,9,11,12]
+numeros = [-2, -2, -2, -1]
+def ordenar_ascendente(lista):
+    num = len(lista)
+    
+    for i in range(num):
+        
+        for j in range(0, num-i-1):
+            if lista[j] > lista[j+1]:
+                
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+    return lista
 
-numeros.sort()
+
+numeros = ordenar_ascendente(numeros)
 
 def num_faltante():
     nueva_lista =[]
     
     for num in numeros:
         if num > 0:
-            nueva_lista.append(num)
-    
+          if num not in nueva_lista:
+              nueva_lista.append(num)
 
+    if  not nueva_lista:
+      cont =1
+      return cont
+  
     cont = nueva_lista[0]
-    cont_2 =nueva_lista[1]
+
     if cont !=1:
         return 1
     for faltante in nueva_lista:
-        
+
         if faltante != cont:
             return cont
         cont += 1
+        
     
     return cont
     
 print(f"El numero menor positivo faltante es {num_faltante()}")
-            
-            
