@@ -1,0 +1,20 @@
+los datos son: 
+
+Nombre: jose
+ Apellido: rodriguez
+ ---------------
+Nombre: estephania
+ Apellido: ramirez
+ ---------------
+Nombre: maria
+ Apellido: gonzales
+ ---------------
+Nombre: alejandro
+ Apellido: ortiz
+ ---------------
+Nombre: natalia
+ Apellido: lopez
+ ---------------
+Nombre: luis
+ Apellido: garcia
+ ---------------
